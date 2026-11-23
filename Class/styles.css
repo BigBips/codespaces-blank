@@ -1,0 +1,33 @@
+.practice-nav a { 
+
+
+display: inline-block; 
+
+width: 120px; 
+
+height: 40px; 
+
+background-color: lightblue; 
+
+text-align: center; 
+
+line-height: 40px; 
+
+margin-right: 5px; 
+
+} 
+
+.card { 
+
+
+display: block; 
+
+width: 200px; 
+
+height: 100px; 
+
+background-color: lightgreen; 
+
+margin-top: 10px; 
+
+}

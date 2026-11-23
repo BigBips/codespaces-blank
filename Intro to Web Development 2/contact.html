@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact North Star Bakery to send a pre-order request or ask a question. Find our hours and location.">
+  <title>Contact and Pre-Orders | North Star Bakery</title>
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <p>North Star Bakery</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact and Pre-Orders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <h1>Contact and Pre-Orders</h1>
+    <p>Reserve your bread, pastries, or cake, or ask us a question. We reply within one business day.</p>
+
+    <section>
+      <h2>Visit Us</h2>
+      <address>
+        North Star Bakery<br>
+        123 Maple Street<br>
+        Anytown, ST 00000
+      </address>
+      <p>Phone: <a href="tel:+15555550123">555-555-0123</a></p>
+      <p>Email: <a href="mailto:hello@northstarbakery.example">hello@northstarbakery.example</a></p>
+    </section>
+
+    <section>
+      <h2>Hours of Operation</h2>
+      <ul>
+        <li>Monday to Friday: 6:30 a.m. to 6:00 p.m.</li>
+        <li>Saturday: 7:00 a.m. to 4:00 p.m.</li>
+        <li>Sunday: 8:00 a.m. to 2:00 p.m.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Inquiry and Pre-Order Request</h2>
+      <p>Fields marked with an asterisk (*) are required. This form sends a request only. We will confirm availability and pricing by email.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Information</legend>
+
+          <p>
+            <label for="full-name">Full name *</label><br>
+            <input type="text" id="full-name" name="full-name" required minlength="2" maxlength="80" autocomplete="name">
+          </p>
+
+          <p>
+            <label for="email">Email address *</label><br>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </p>
+
+          <p>
+            <label for="phone">Phone number (optional)</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-123-4567" title="Enter a phone number in the format 555-123-4567" autocomplete="tel" aria-describedby="phone-hint">
+          </p>
+          <p id="phone-hint">Use the format 555-123-4567.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Request</legend>
+
+          <fieldset>
+            <legend>Request type *</legend>
+            <p>
+              <input type="radio" id="type-preorder" name="request-type" value="pre-order" required>
+              <label for="type-preorder">Pre-order for pickup</label>
+            </p>
+            <p>
+              <input type="radio" id="type-question" name="request-type" value="general-question">
+              <label for="type-question">General question</label>
+            </p>
+            <p>
+              <input type="radio" id="type-event" name="request-type" value="event-inquiry">
+              <label for="type-event">Event or catering inquiry</label>
+            </p>
+          </fieldset>
+
+          <p>
+            <label for="pickup-date">Preferred pickup date (for pre-orders and events)</label><br>
+            <input type="date" id="pickup-date" name="pickup-date">
+          </p>
+
+          <p>
+            <label for="item-details">Item details *</label><br>
+            <textarea id="item-details" name="item-details" rows="5" cols="40" required minlength="10" maxlength="500" aria-describedby="item-hint"></textarea>
+          </p>
+          <p id="item-hint">Tell us what you would like, such as the items, quantities, sizes, and any custom cake details. Up to 500 characters.</p>
+
+          <p>
+            <label for="allergy-notes">Allergy notes (if applicable)</label><br>
+            <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="40" maxlength="300" aria-describedby="allergy-hint"></textarea>
+          </p>
+          <p id="allergy-hint">Please list any food allergies. Our kitchen handles wheat, milk, eggs, tree nuts, and seeds.</p>
+        </fieldset>
+
+        <p><button type="submit">Send Request</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+    <p>Find us at 123 Maple Street, Anytown, ST 00000.</p>
+  </footer>
+</body>
+</html>
