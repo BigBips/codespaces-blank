@@ -258,3 +258,71 @@ picture img {
 }
 
 /*Forms up next*/
+form {
+    max-width: 40rem;
+}
+
+fieldset {
+    margin: 0 0 1.25rem;
+    padding: 1rem;
+    border: 2px solid #1F2F4D;
+    border-radius: 0.5rem;
+}
+
+fieldset fieldset {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #1f2f4d;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"]
+input[type="email"]
+input[type="tel"]
+input[type="date"]
+textarea {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.6rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #3b2a20;
+    border: 2px solid #3b2a20;
+    border-radius: 0.25rem;
+}
+
+input[type="radio"] {
+    margin-right:0.5rem;
+}
+
+fieldset p[id$="-hint"] { /*$= means ends with, targets all <p> elements that have an id that ends with -hint*/
+    MARGIN-TOP: -0.5REM;
+    FONT-SIZE: 0.9REM;
+}
+
+button {
+    padding:0.8rem 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF8EE;
+    background-color: #A04420;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1F2F4D;
+    }
+
+    /*Footer section below*/
