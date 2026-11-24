@@ -139,3 +139,7 @@ nav a {
     border-bottom: 3px solid transparent;
 }
 /*Website starting to come together. Have header beginning to look better and index page so far coming together nicely. MAKE SURE TO CHECK OTHER PAGES */
+nav a:hover {
+    color: #FFF8EE;
+    border-bottom-color: #FFF8EE;
+}
