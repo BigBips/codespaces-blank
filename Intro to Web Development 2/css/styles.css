@@ -1,37 +1,141 @@
-h1 {
-    color: darkblue;
+/* North Star Bakery
+    Palette: cream #FFF8EE (background), brown #3B2A20 (text),
+            crust #A04420 (accent), midnight blue #1F2F4D (header/footer)
+            Fonts: Georgia (headings), Arial(body) */
+/* Base (mobile first*/
+/* below this, I added universal selector * for every HTML tag such as <div>,<p>,<h1> etc. I also added (::before and ::after to target the pseudo-element for all elements. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
+
 body {
-    font-family: Arial, sans-serif;
-    color: #333
+    margin: 0;
+    min-height: 100vh; /* 100% visual height of users screen*/
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF8EE; /* cream color*/
+    color: #3B2A20; /* midnight blue color*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem; /*defaults often to 16px, ROOT EM - scales on parent*/
+    line-height: 1.6;
 }
-h1 {
-    font-size: 36px;
+/* above this is step one CSS */
+h1, /*trying to make things easier to read*/
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.25;
+    margin: 0 0 0.75rem; /*short hand for margins 1 2 and 3, ROOT EM (standard)*/
+    }
+
+h1{
+        color:#1F2F4D;
+        font-size: 2rem;
 }
+
+h2{
+    color:#A04420;
+    font-size: 1.5rem
+}
+
+h3{
+    color:#3B2A20;
+font-size: 1.15rem;
+}
+
 p {
-    margin-bottom: 16px;
+    margin: 0 0 1rem;
+    max-width: 65ch; /*ch is relative length unit equal to the advance width of the zero glyph in the elements current font*/
 }
-.content-sizing, 
-.border-sizing { 
 
-
-width: 300px; 
-
-padding: 20px; 
-
-border: 5px solid black; 
-
-background-color: lightgray; 
-
-margin-bottom: 10px; 
-
+a {
+    color: #A04420;
+    text-decoration: underline;
 }
-.content-sizing { 
 
-box-sizing: content-box; 
-} 
-
-.border-sizing { 
-
-box-sizing: border-box; 
+a:hover {
+    color: #1F2F4D;
 }
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #1F2F4D;
+    outline-offset: 2px;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+audio {
+    width: 100%;
+    max-width: 30rem;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin: 0 0 1rem;
+    padding-left: 1.25rem;
+}
+
+/* > indicates CSS direct child*/
+body > a[href="#main-content"] {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background-color: #FFF8EE;
+    color: #1F2F4D;
+    padding: 0.75rem 1rem;
+    z-index: 10; /* sets front to back stack order so it sits on top of overlapping elements*/
+}
+
+body > a[href="#main-content"]:focus {
+    left: 0;
+}
+
+/*below header and nav stuff*/
+header {
+    background-color: #1F2F4D;
+    color: #FFF8EE;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem
+}
+
+header > p {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold; /*thickness of font*/
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.2rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.4rem 0;
+    color:#FFF8EE;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+/*Website starting to come together. Have header beginning to look better and index page so far coming together nicely. MAKE SURE TO CHECK OTHER PAGES */
