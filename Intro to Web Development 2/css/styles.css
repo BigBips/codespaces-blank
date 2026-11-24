@@ -143,3 +143,14 @@ nav a:hover {
     color: #FFF8EE;
     border-bottom-color: #FFF8EE;
 }
+
+nav a [aria-current="page"] {
+    font-weight: bold;
+    border-bottom-color: #FFF8EE;
+}
+
+header a:focus-visible {
+    outline-color:#FFF8EE;
+}
+
+/*Main content of the website is going below here*/
